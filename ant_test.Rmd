@@ -9,6 +9,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+HI ALLISON
+
 Short PCA example (commented out so you can see what happens one step at a time...)
 
 ###Get packages and ant nest nutrient data
@@ -29,7 +31,7 @@ corrplot(cor(ant_df), type = "upper", method = "square")
 # Perform PCA
 
 ant_pca <- prcomp(ant_df, scale = TRUE) # Note: all must be numeric (the country names are just labels), so we exclude column 1
-summary(ant_pca) # Within first two PCs, 63% of variance explained!
+summary(ant_pca) # Within first two PCs, 63% of variance explained! (cool considering there is originally 10 variables)
 
 # Use the plot() function on the PCA name to see how the variances decline as the principal component increases
 
